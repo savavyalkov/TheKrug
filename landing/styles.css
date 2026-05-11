@@ -576,6 +576,11 @@ footer {
     color: var(--text);
 }
 
+.footer-text {
+    position: absolute;
+    transform: translateX(783px);
+}
+
 /* Тёмная тема */
 [data-dark] {
     display: none;
@@ -783,7 +788,7 @@ footer {
     font-size: 80px !important;
     line-height: 75px !important;
     letter-spacing: 2px !important;
-    transform: translateY(6px);
+    transform: translateY(10px);
 }
 
     .btn-3 {
