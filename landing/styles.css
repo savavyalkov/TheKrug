@@ -577,8 +577,8 @@ footer {
 }
 
 .footer-text {
-    position: absolute;
-    transform: translateX(783px);
+    text-align: center;
+    width: 100%;
 }
 
 /* Тёмная тема */
@@ -808,6 +808,11 @@ footer {
         height: auto;
         padding: 20px;
         text-align: center;
+    }
+
+    .footer-text {
+    text-align: center;
+    width: 100%;
     }
 }
 
