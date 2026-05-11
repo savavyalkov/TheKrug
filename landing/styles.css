@@ -585,3 +585,228 @@ footer {
 .dark-theme .moon {
     display: none;
 }
+
+/* Планшеты */
+@media (max-width: 1024px) {
+
+    h1,
+    .img-text {
+        font-size: 80px;
+        line-height: 80px;
+        letter-spacing: 4px;
+    }
+
+    .hero {
+        height: 650px;
+    }
+
+    .hero-img {
+        width: 40%;
+    }
+
+    .alexander {
+        width: 450px;
+    }
+
+    .divider2 {
+        width: 100%;
+    }
+
+    .tablica {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Телефоны */
+@media (max-width: 768px) {
+
+    body {
+        padding-top: 90px;
+    }
+
+    p,
+    h1,
+    h2,
+    .community,
+    .mesto,
+    .block,
+    .prisoed {
+        margin-left: 0;
+    }
+
+    h1 {
+        font-size: 52px;
+        line-height: 52px;
+        letter-spacing: 2px;
+        text-align: center;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 22px;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    header {
+        padding: 10px 20px;
+        gap: 10px;
+    }
+
+    .btn-wrap {
+        gap: 8px;
+    }
+
+    .btn-1 {
+        width: 70px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .btn-2 {
+        width: 110px;
+        height: 34px;
+        font-size: 13px;
+    }
+
+    .theme-btn {
+        width: 34px;
+        height: 34px;
+        padding: 0;
+    }
+
+    .hero {
+        height: auto;
+        padding-bottom: 40px;
+    }
+
+    .hero-img {
+        position: static;
+        width: 70%;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .hero-img-left {
+        transform: scaleX(-1);
+    }
+
+    .hero-text {
+        position: relative;
+        z-index: 2;
+    }
+
+    .tablica {
+        grid-template-columns: 1fr;
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .card {
+        border-right: none;
+    }
+
+    .block {
+        width: auto;
+        padding: 0 20px;
+        box-sizing: border-box;
+    }
+
+    .dark-block {
+        padding: 40px 20px;
+    }
+
+    .step {
+        gap: 14px;
+        margin-bottom: 30px;
+    }
+
+    .num {
+        font-size: 42px;
+        width: 40px;
+        margin-top: 12px;
+    }
+
+    .text h3 {
+        font-size: 18px;
+        margin-top: 10px;
+    }
+
+    .divider2 {
+        width: 100%;
+    }
+
+    .alexander {
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .img-box img {
+        width: 100%;
+    }
+
+    .img-text {
+        font-size: 46px;
+        line-height: 46px;
+        letter-spacing: 2px;
+        width: 90%;
+    }
+
+    .btn-3,
+    .btn-4 {
+        width: calc(100% - 40px);
+        max-width: 320px;
+    }
+
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+    }
+
+    .img-text {
+        font-size: 36px;
+        line-height: 36px;
+    }
+
+    .logo {
+        font-size: 28px;
+    }
+
+    .logo2 {
+        font-size: 16px;
+    }
+
+    .card {
+        padding: 20px;
+    }
+
+    .icon {
+        width: 44px;
+        height: 44px;
+    }
+
+    .icon i {
+        font-size: 20px;
+    }
+}
