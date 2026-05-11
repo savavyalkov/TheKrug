@@ -640,7 +640,7 @@ footer {
 @media (max-width: 768px) {
 
     body {
-        padding-top: 90px;
+        padding-top: 76px;
     }
 
     p,
@@ -702,7 +702,7 @@ footer {
 
     .hero {
         min-height: auto;
-        padding: 120px 0 60px;
+        padding: 600px 0 60px;
     }
 
     .hero-img {
@@ -823,10 +823,6 @@ footer {
 }
 
 @media screen and (max-width: 768px) {
-
-    .community {
-    margin-top: -20px;
-}
 
     h1 {
         font-size: 52px !important;
