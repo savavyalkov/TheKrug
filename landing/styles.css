@@ -683,7 +683,7 @@ footer {
     }
 
     .btn-1 {
-        width: 50px;
+        width: 70px;
         height: 34px;
         font-size: 13px;
     }
@@ -762,22 +762,42 @@ footer {
         margin-top: 30px;
     }
 
-    .img-box img {
-        width: 90%;
-        max-width: 320px;
-    }
+.img-box {
+    position: relative;
+    width: fit-content;
+    margin: 0 auto;
+}
 
-    .img-text {
-        font-size: 80px !important;
-         line-height: 75px !important;
-        letter-spacing: 2px !important;
-        width: 100% !important;
-    }
+.img-box img {
+    width: 90%;
+    max-width: 320px;
+    margin: 0 auto;
+}
+
+.img-text {
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+
+    text-align: center;
+
+    font-size: 80px !important;
+    line-height: 75px !important;
+    letter-spacing: 2px !important;
+
+    width: 100% !important;
+    height: 100%;
+}
 
     .btn-3,
     .btn-4 {
         width: calc(100% - 40px);
-        max-width: 320px;
+        max-width: 200px;
     }
 
     footer {
