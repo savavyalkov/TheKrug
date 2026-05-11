@@ -783,6 +783,7 @@ footer {
     font-size: 80px !important;
     line-height: 75px !important;
     letter-spacing: 2px !important;
+    transform: translateY(6px);
 }
 
     .btn-3 {
