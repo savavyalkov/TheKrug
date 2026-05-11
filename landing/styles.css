@@ -1,3 +1,31 @@
+/* Светлая тема */
+:root {
+  --bg: #F7F4EF;
+  --head: #1A1714;
+  --text: #7A736A;
+  --block: #EDEAE4;
+  --border: #DDD9D2;
+  --accent: #F88300;
+  --main: #F7E6D9;
+  --border: #F5BE9C;
+  --separator: #DDD9D2;
+  --btn: #1A1714
+}
+
+/* Темная тема */
+.dark-theme {
+  --bg: #0F0F0F;
+  --head: #F7F4EF;
+  --text: #A39F9A;
+  --block: #3F3E3C;
+  --border: #DDD9D2;
+  --accent: #F88300;
+  --main: #3C2D25;
+  --border: #D98A5F;
+  --separator: #DDD9D2;
+  --btn: #F7F4EF;
+}
+
 @font-face {
   font-family: 'Bebas';
   src: url(./fonts/bebasneuecyrillic.ttf) format('truetype');
@@ -20,7 +48,8 @@ body::-webkit-scrollbar {
 }
 
 body {
-  background-color: #F7F4EF;
+  background-color: var(--bg);
+  color: var(--head);
   padding-top: 70px;
 }
 
@@ -31,7 +60,7 @@ p {
     margin-top: 50px;
     margin-bottom: 50px;
     margin-left: 30px;
-    color: #1A1714;
+    color: var(--text);
 }
 
 h1 {
@@ -42,7 +71,7 @@ h1 {
     line-height: 120px;
     margin-top: 3px;
     margin-bottom: 3px;
-    color: #1A1714;
+    color: var(--head);
     margin-left: 30px;
 }
 
@@ -51,7 +80,7 @@ h2 {
     font-weight: 500;
     font-size: 20px;
     margin-left: 30px;
-    color: #1A1714;
+    color: var(--head);
 
 }               
 
@@ -81,7 +110,7 @@ header {
     box-sizing: border-box;
     background: rgba(247, 244, 239, 0.2);
     backdrop-filter: blur(25px);
-    border-bottom: 1px solid #DDD9D2;
+    border-bottom: 1px solid var(--separator);
 }
 
 
@@ -100,7 +129,7 @@ header {
     line-height: 1;
     margin: 0;
     text-decoration: none;
-    color: #1A1714;
+    color: var(--head);
     display: block;
     }
 
@@ -112,7 +141,7 @@ header {
     line-height: 1;
     margin: 0;
     text-decoration: none;
-    color: #F88300;
+    color: var(--accent);
     display: block;
     }
 
@@ -129,11 +158,11 @@ header {
 }
 
 .btn-1:hover {
-    background-color: #DDD9D2;
+    background-color: var(--separator);
 }
 
 .btn-2:hover {
-    background-color: #e67600;
+    background-color: var(--separator);
 }
 
 .btn-1 {
@@ -144,14 +173,15 @@ header {
     margin-left: 10px;
     width: 76px;
     height: 36px;
-    border: 2px solid #DDD9D2;
+    border: 2px solid var(--separator);
     border-radius: 5px;
     background-color: transparent;
-    color: #7A736A;
+    color: var(--text);
     font-weight: 600;
     padding: 0 14px;
     cursor: pointer;
     transition: 0.2s ease;
+    color: var(--head);
     }
 
 .btn-2 {
@@ -163,18 +193,39 @@ header {
     width: 125px;
     height: 36px;
     border-radius: 5px;
-    background-color: #F88300;
+    background-color: var(--accent);
     border: none;
-    color: #F7F4EF;
+    color: var(--bg);
     font-weight: 600;
     padding: 0 14px;
     cursor: pointer;
     transition: 0.2s ease;
+    color: var(--btn);
     }
+
+.theme-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: right;
+    margin-left: 10px;
+    width: 36px;
+    height: 36px;
+    border: 2px solid var(--separator);
+    border-radius: 100px;
+    background-color: transparent;
+    color: var(--text);
+    font-weight: 600;
+    font-size: 18px;
+    padding: 0 14px;
+    cursor: pointer;
+    transition: 0.2s ease;
+    color: var(--head);
+}
 
 /* Сообщество школьников и студентов */
 .community {
-    color: #F88300;
+    color: var(--accent);
     margin-top: 20px;
     margin-bottom: 50px;
     margin-left: 30px;
@@ -182,7 +233,7 @@ header {
 
 /* Расти. */
 .rasti {
-  color: #F88300;
+  color: var(--accent);
     margin-bottom: 50px;
 }
 
@@ -193,7 +244,7 @@ header {
     width: 220px;
     height: 50px;
     border-radius: 5px;
-    background-color: #F88300;
+    background-color: var(--accent);
     border: none;
     color: #F7F4EF;
     font-weight: 600;
@@ -202,20 +253,20 @@ header {
 }
 
 .btn-3:hover {
-    background-color: #e67600;
+    background-color: var(--separator);
 }
 
 .divider {
     border: none; 
-    background-color: #DDD9D2; 
-    border-top: 2px solid #DDD9D2;
+    background-color: var(--separator); 
+    border-top: 2px solid var(--separator);
     border-radius: 5px;
     width: 100%;
 }
 
 .mesto {
     margin-top: 20px;
-    color: #7A736A;
+    color: var(--text);
     line-height: 23px;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -235,24 +286,22 @@ header {
     
 }
 
-.hero-img-right {
+.hero-img {
     position: absolute;
-    right: -10%;
-    top: 70px;
-    width: 45%; 
-    max-width: 700px;
-    height: auto;
-    object-fit: contain;
-}
-
-.hero-img-left {
-    position: absolute;
-    left: -10%;
     top: 70px;
     width: 45%;
     max-width: 700px;
     height: auto;
     object-fit: contain;
+    display: block;
+}
+
+.hero-img-right {
+    right: -10%;
+}
+
+.hero-img-left {
+    left: -10%;
     transform: scaleX(-1);
 }
 
@@ -263,13 +312,13 @@ header {
 }
 
 .chtotakoe {
-    color: #F88300;
+    color: var(--accent);
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
 .soob {
-    color: #F88300;
+    color: var(--accent);
     margin-bottom: 50px;
 }
 
@@ -279,23 +328,23 @@ header {
     grid-template-columns: repeat(3, 1fr);
     margin-left: 30px;
     margin-right: 30px;
-    border: 1px solid #DDD9D2;
+    border: 1px solid var(--separator);
     border-radius: 12px;
     overflow: hidden;
-    color: #1A1714;
+    color: var(--head);
 }
 
 .card {
     padding: 30px;
-    border-right: 1px solid #DDD9D2;
-    border-bottom: 1px solid #DDD9D2;
+    border-right: 1px solid var(--separator);
+    border-bottom: 1px solid var(--separator);
 }
 
 .card p {
     margin-top: 15px;
     margin-bottom: 0;
     line-height: 24px;
-    color: #7A736A;
+    color: var(--text);
 }
 
 .card-top {
@@ -312,8 +361,8 @@ header {
 .icon {
     width: 50px;
     height: 50px;
-    background-color: #F7E6D9;
-    border: 2px solid #F88300;
+    background-color: var(--main);
+    border: 2px solid var(--border);
     border-radius: 12px;
     display: flex;
     justify-content: center;
@@ -321,20 +370,20 @@ header {
 }
 
 .icon i {
-    color: #1A1714;
+    color: var(--head);
     font-size: 24px;
 }
 
 .dark-block {
     position: relative;
-    background-color: #EDEAE4;
+    background-color: var(--block);
     padding: 50px 30px;
     margin-top: 30px;
     margin-bottom: 50px;
 }
 
 .kakrabotaet {
-    color: #F88300;
+    color: var(--accent);
     margin-bottom: 30px;
     margin-top: 15px;
     margin-left: auto;
@@ -346,14 +395,14 @@ header {
 }
 
 .trishaga {
-    color: #1A1714;
+    color: var(--head);
     margin-top: 15px;
     margin-bottom: 15px;
     margin-left: auto;
 }
 
 .kruga {
-    color: #F88300;
+    color: var(--accent);
 }
 
 .step {
@@ -382,14 +431,14 @@ header {
 
 .text p {
   margin: 6px 0 0;
-  color: #7A736A;
+  color: var(--text);
   line-height: 1.5;
 }
 
 .divider2 {
-    border: none; /* Убираем стандартную границу */
-    background-color: #DDD9D2; /* Цвет линии */
-    border-top: 2px solid #DDD9D2;
+    border: none; 
+    background-color: var(--separator); 
+    border-top: 2px solid var(--separator);
     border-radius: 5px;
     width: 830px;
     margin: 10px 0;
@@ -428,7 +477,7 @@ header {
 }
 
 .svoy {
-    color: #F88300;
+    color: var(--accent);
 }
 
 .btn-4 {
@@ -437,7 +486,7 @@ header {
     width: 220px;
     height: 50px;
     border-radius: 5px;
-    background-color: #F88300;
+    background-color: var(--accent);
     border: none;
     color: #F7F4EF;
     font-weight: 600;
@@ -447,11 +496,11 @@ header {
 }
 
 .btn-4:hover {
-    background-color: #e67600;
+    background-color: var(--separator);
 }
 
 .prisoed {
-    color: #7A736A;
+    color: var(--text);
     line-height: 23px;
     margin-top: 20px;
     margin-bottom: 50px;
@@ -469,8 +518,8 @@ footer {
     height: 70px;
     padding: 0 40px;
     box-sizing: border-box;
-    border-top: 1px solid #DDD9D2;
-    background-color: #F7F4EF;
+    border-top: 1px solid var(--separator);
+    background-color: var(--bg);
 }
 
 /* Лого */
@@ -486,7 +535,7 @@ footer {
     font-size: 36px;
     margin: 0;
     text-decoration: none;
-    color: #1A1714;
+    color: var(--head);
     line-height: 1;
 }
 
@@ -496,7 +545,7 @@ footer {
     font-size: 20px;
     margin: 0;
     text-decoration: none;
-    color: #F88300;
+    color: var(--accent);
     line-height: 1;
 }
 
@@ -505,7 +554,34 @@ footer {
     margin: 0;
     font-family: 'Geologica', sans-serif;
     font-size: 14px;
-    color: #7A736A;
+    color: var(--text);
 }
 
-    
+[data-dark] {
+    display: none;
+}
+
+.dark-theme [data-light] {
+    display: none;
+}
+
+.dark-theme [data-dark] {
+    display: block;
+}
+
+.sun {
+    display: none;
+}
+
+.moon {
+    display: block;
+}
+
+/* Тёмная тема */
+.dark-theme .sun {
+    display: block;
+}
+
+.dark-theme .moon {
+    display: none;
+}
