@@ -810,3 +810,54 @@ footer {
         font-size: 20px;
     }
 }
+
+@media (max-width: 768px) {
+
+    /* Верхний главный заголовок */
+    h1 {
+        font-size: 56px;
+        line-height: 56px;
+        letter-spacing: 2px;
+    }
+
+    /* Круги в hero */
+    .hero {
+        height: auto;
+        min-height: 650px;
+        padding-bottom: 60px;
+    }
+
+    .hero-img {
+        opacity: 0.12;
+        width: 90%;
+        top: 120px;
+        z-index: 0;
+    }
+
+    .hero-img-left {
+        left: -35%;
+    }
+
+    .hero-img-right {
+        right: -35%;
+    }
+
+    .hero-text {
+        position: relative;
+        z-index: 2;
+    }
+
+    /* Текст внутри круга снизу */
+    .img-text {
+        font-size: 42px;
+        line-height: 42px;
+        letter-spacing: 2px;
+        width: 90%;
+    }
+
+    /* Нижняя картинка */
+    .img-box img {
+        width: 100%;
+        max-width: 350px;
+    }
+}
