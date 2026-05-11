@@ -698,8 +698,7 @@ footer {
     }
 
     .hero-text {
-        position: relative;
-        z-index: 2;
+        z-index: 10 !important;
     }
 
     .tablica {
@@ -834,17 +833,8 @@ footer {
     }
 
     .hero-img {
-        width: 90% !important;
+        z-index: 0 !important;
         opacity: 0.08 !important;
-        top: 160px !important;
-    }
-
-    .hero-img-left {
-        left: -45% !important;
-    }
-
-    .hero-img-right {
-        right: -45% !important;
     }
 
     .img-box img {
