@@ -832,13 +832,14 @@ footer {
 
     .img-text {
         font-size: 80px !important;
-        line-height: 70px !important;
+        line-height: 75px !important;
         letter-spacing: 2px !important;
         width: 100% !important;
     }
 
     .hero {
         min-height: 650px !important;
+        max-height: 650px !important;
         height: auto !important;
         position: relative;
         overflow: hidden;
