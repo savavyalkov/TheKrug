@@ -683,7 +683,7 @@ footer {
     }
 
     .btn-1 {
-        width: 70px;
+        width: 50px;
         height: 34px;
         font-size: 13px;
     }
@@ -702,7 +702,7 @@ footer {
 
     .hero {
         min-height: auto;
-        padding: 60px 0 60px;
+        padding: 35px 0 60px;
     }
 
     .hero-img {
