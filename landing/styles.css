@@ -825,7 +825,7 @@ footer {
 @media screen and (max-width: 768px) {
 
     .community {
-    margin-top: auto;
+    margin-top: -20px;
 }
 
     h1 {
