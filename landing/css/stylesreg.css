@@ -1,0 +1,291 @@
+/* Светлая тема */
+:root {
+  --bg: #f7f4ef;
+  --head: #1a1714;
+  --text: #7a736a;
+  --block: #edeae4;
+  --accent: #f88300;
+  --main: #f7e6d9;
+  --border: #f5be9c;
+  --separator: #ddd9d2;
+  --btn: #1a1714;
+}
+
+/* Темная тема */
+.dark-theme {
+  --bg: #0f0f0f;
+  --head: #f7f4ef;
+  --text: #a39f9a;
+  --block: #3f3e3c;
+  --accent: #f88300;
+  --main: #3c2d25;
+  --border: #d98a5f;
+  --separator: #ddd9d2;
+  --btn: #f7f4ef;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url(../assets/fonts/bebasneuecyrillic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Geologica";
+  src: url(../assets/fonts/Geologica-VariableFont.ttf) format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  background-color: var(--bg);
+}
+
+h1 {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  color: var(--head);
+}
+
+.uzheest {
+  font-family: "Geologica", sans-serif;
+}
+
+.label {
+  font-family: "Geologica", sans-serif;
+}
+
+.reg-rext {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--head);
+}
+
+.reg-input {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: var(--text);
+}
+
+/* Логотип */
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+  margin-left: 200px;
+  margin-top: 30px;
+}
+
+.logo {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 50px;
+  letter-spacing: 0px;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--head);
+  display: inline-block;
+  width: fit-content;
+}
+
+.logo2 {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 34px;
+  letter-spacing: 0px;
+  line-height: 1;
+  text-decoration: none;
+  color: var(--accent);
+  display: inline-block;
+  width: fit-content;
+  margin-bottom: -7px;
+}
+
+.theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px;
+  height: 50px;
+  border: 2px solid var(--separator);
+  border-radius: 100px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 30px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: var(--head);
+  margin-top: 20px;
+  margin-right: 200px;
+}
+
+.layout {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: center;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 420px;
+  margin-bottom: 12px;
+}
+
+.step-bar {
+  height: 4px;
+  width: 30%;
+  background: var(--separator);
+  border-radius: 10px;
+  margin: 0;
+}
+
+.step-bar.active {
+  background: linear-gradient(to right, var(--accent) 0%, var(--accent) 100%);
+}
+
+.title-block {
+  display: flex;
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 96px;
+  color: var(--head);
+  text-align: center;
+  margin: 0;
+  flex-direction: column;
+}
+
+.center-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Инпут строчки */
+.signupFrm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  background-color: var(--bg);
+  width: 350px;
+  border-radius: 8px;
+  padding: 20px 40px;
+  box-shadow: 0 10px 25px rgba(92, 99, 105, 0.2);
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+}
+
+.title {
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+.inputContainer {
+  position: relative;
+  height: 45px;
+  width: 100%;
+  margin: 10px auto;
+}
+
+.input {
+  width: 70%;
+  margin: 0 auto;
+  display: block;
+  height: 100%;
+  border: 1px solid var(--head);
+  border-radius: 7px;
+  font-size: 16px;
+  padding: 0 40px 0 20px;
+  outline: none;
+  background: transparent;
+  box-sizing: border-box;
+}
+
+::placeholder {
+  color: transparent;
+}
+
+.label {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  position: absolute;
+  top: 15px;
+  left: 17%;
+  padding: 0 4px;
+  background-color: var(--bg);
+  color: var(--text);
+  font-size: 16px;
+  transition: 0.5s;
+  z-index: 0;
+}
+
+.submitBtn {
+  font-family: "Geologica", sans-serif;
+  font-weight: 700;
+  display: block;
+  padding: 15px 30px;
+  border: none;
+  background-color: var(--accent);
+  color: var(--bg);
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 30px;
+  align-self: flex-end;
+  width: 350px;
+}
+
+.submitBtn:hover {
+  background-color: var(--head);
+  transform: translateY(-2px);
+}
+
+.input:focus + .label {
+  top: -7px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--accent);
+}
+
+.input:focus {
+  border: 2px solid var(--accent);
+}
+
+.input:not(:placeholder-shown) + .label {
+  top: -7px;
+  left: 3px;
+  z-index: 10;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.step {
+  display: none;
+}
+
+.step.active {
+  display: block;
+}
+
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.left {
+  width: 100%;
+}

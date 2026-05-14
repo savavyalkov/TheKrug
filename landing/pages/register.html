@@ -1,0 +1,167 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TheKrug</title>
+    <link rel="stylesheet" href="../css/stylesreg.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <main>
+      <div class="layout">
+        <div class="left">
+          <div class="top-bar">
+            <div class="logo-wrap">
+              <a href="/" class="logo2">THE</a>
+              <a href="/" class="logo">KRUG</a>
+            </div>
+
+            <div class="btn-wrap">
+              <button type="button" class="theme-btn">
+                <span class="sun"><i class="fa-regular fa-sun"></i></span>
+                <span class="moon"><i class="fa-solid fa-moon"></i></span>
+              </button>
+            </div>
+          </div>
+
+          <div class="center-block">
+            <div class="title-block">
+              <div class="steps">
+                <div class="step-bar active"></div>
+                <div class="step-bar"></div>
+                <div class="step-bar"></div>
+              </div>
+
+              <h1 class="register">РЕГИСТРАЦИЯ</h1>
+            </div>
+
+          <div class="odindvatri">
+            <div class="step step-1 active">
+            <div class="signupFrm">
+              <form action="" class="form">
+                <div class="inputContainer">
+                  <input type="text" class="input" placeholder="a" />
+                  <label for="" class="label">Email</label>
+                </div>
+
+                <div class="inputContainer">
+                  <input type="text" class="input" placeholder="a" />
+                  <label for="" class="label">Пароль</label>
+                </div>
+
+                <div class="inputContainer">
+                  <input type="text" class="input" placeholder="a" />
+                  <label for="" class="label">Повторите пароль</label>
+                </div>
+
+                <button type="submit" class="submitBtn">
+                  Далее
+                  <i class="fa-solid fa-arrow-right"></i>
+                </button>
+                <p class="uzheest">Уже есть аккаунт? <a href="voiti">Войти</a></p>
+          </div>
+              </form>
+            </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- Шаг 2 -->
+          <div class="step step-2">
+            <label class="reg-rext">Имя и фамилия</label>
+            <input type="text" name="" placeholder="Иван Иванов" />
+
+            <label class="reg-rext">Дата рождения</label>
+
+            <div class="input-wrap">
+              <input type="text" placeholder="дд.мм.гггг" />
+              <i class="fa-solid fa-calendar-days icon"></i>
+            </div>
+
+            <label class="reg-rext">Город</label>
+            <input type="text" name="" placeholder="Ваш город" />
+
+            <!-- Роль начало -->
+            <div class="role-group">
+              <label class="role-option">
+                <input type="radio" name="role" value="school" checked />
+                <span class="circle"></span>
+                Школьник
+              </label>
+
+              <label class="role-option">
+                <input type="radio" name="role" value="student" />
+                <span class="circle"></span>
+                Студент
+              </label>
+
+              <label class="role-option">
+                <input type="radio" name="role" value="other" />
+                <span class="circle"></span>
+                Другое
+              </label>
+            </div>
+
+            <input
+              type="text"
+              class="other-role-input hidden"
+              placeholder="Введите вашу роль"
+            />
+
+            <button type="button" class="btn-dalee">
+              Далее <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="uzheest">Уже есть аккаунт? <a href="voiti">Войти</a></p>
+            <!-- Роль конец -->
+          </div>
+
+          <!-- Шаг 3 -->
+          <div class="step step-3">
+            <label class="reg-rext">
+              Выберите нишу, в которой вы разбираетесь
+            </label>
+
+            <input type="text" name="" placeholder="Ваша ниша" />
+
+            <span class="calendar">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+
+            <input type="text" name="" placeholder="Ниша для изучения" />
+
+            <label class="reg-rext">
+              Выберите нишу, которую вы хотите изучать
+            </label>
+
+            <span class="calendar">
+              <i class="fa-solid fa-chevron-down"></i>
+            </span>
+
+            <p class="uslpolit">
+              Регистрируясь, я принимаю
+              <a href="usloviaispolzovania">[Условия использования]</a>
+              и
+              <a href="politikakondendecialnosti"
+                >[Политику конфиденциальности]</a
+              >
+            </p>
+
+            <button type="button" class="btn-end">
+              Завершить <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+            <p class="uzheest">Уже есть аккаунт? <a href="voiti">Войти</a></p>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <script src="../js/scriptreg.js"></script>
+  </body>
+</html>

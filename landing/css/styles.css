@@ -1,0 +1,847 @@
+/* Светлая тема */
+:root {
+  --bg: #f7f4ef;
+  --head: #1a1714;
+  --text: #7a736a;
+  --block: #edeae4;
+  --accent: #f88300;
+  --main: #f7e6d9;
+  --border: #f5be9c;
+  --separator: #ddd9d2;
+  --btn: #1a1714;
+}
+
+/* Темная тема */
+.dark-theme {
+  --bg: #0f0f0f;
+  --head: #f7f4ef;
+  --text: #a39f9a;
+  --block: #3f3e3c;
+  --accent: #f88300;
+  --main: #3c2d25;
+  --border: #d98a5f;
+  --separator: #ddd9d2;
+  --btn: #f7f4ef;
+}
+
+@font-face {
+  font-family: "Bebas";
+  src: url(../assets/fonts/bebasneuecyrillic.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Geologica";
+  src: url(../assets/fonts/Geologica-VariableFont.ttf) format("truetype");
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  scrollbar-width: none;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Chrome */
+}
+
+body {
+  background-color: var(--bg);
+  color: var(--head);
+  padding-top: 70px;
+}
+
+p {
+  font-family: "Geologica", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+  color: var(--text);
+}
+
+h1 {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 120px;
+  letter-spacing: 10px;
+  line-height: 120px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  color: var(--head);
+  margin-left: 30px;
+}
+
+h2 {
+  font-family: "Geologica", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  margin-left: 30px;
+  color: var(--head);
+}
+
+/* Найди свой круг */
+.img-text {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 120px;
+  letter-spacing: 10px;
+  line-height: 120px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+  text-align: center;
+}
+
+/* Хидер */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px 40px;
+  box-sizing: border-box;
+  background: rgba(247, 244, 239, 0.2);
+  backdrop-filter: blur(25px);
+  border-bottom: 1px solid var(--separator);
+}
+
+/* Логотип */
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  letter-spacing: 0px;
+  line-height: 1;
+  margin: 0;
+  text-decoration: none;
+  color: var(--head);
+  display: block;
+}
+
+.logo2 {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  letter-spacing: 0px;
+  line-height: 1;
+  margin: 0;
+  text-decoration: none;
+  color: var(--accent);
+  display: block;
+}
+
+/* Кнопки войти/регистрация */
+.btn-wrap {
+  display: flex;
+  align-items: center;
+  gap: 0px;
+}
+
+.btn-1,
+.btn-2 {
+  float: none;
+  margin-left: 0;
+}
+
+.btn-1:hover {
+  background-color: var(--separator);
+}
+
+.btn-2:hover {
+  background-color: var(--separator);
+}
+
+.btn-1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-left: 10px;
+  width: 76px;
+  height: 36px;
+  border: 2px solid var(--separator);
+  border-radius: 5px;
+  background-color: transparent;
+  color: var(--text);
+  font-weight: 600;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: var(--head);
+}
+
+.btn-2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-left: 10px;
+  width: 125px;
+  height: 36px;
+  border-radius: 5px;
+  background-color: var(--accent);
+  border: none;
+  color: var(--bg);
+  font-weight: 600;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: var(--btn);
+}
+
+.theme-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  float: right;
+  margin-left: 10px;
+  width: 36px;
+  height: 36px;
+  border: 2px solid var(--separator);
+  border-radius: 100px;
+  background-color: transparent;
+  color: var(--text);
+  font-weight: 600;
+  font-size: 18px;
+  padding: 0 14px;
+  cursor: pointer;
+  transition: 0.2s ease;
+  color: var(--head);
+}
+
+/* Сообщество школьников и студентов */
+.community {
+  color: var(--accent);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+/* Расти. */
+.rasti {
+  color: var(--accent);
+  margin-bottom: 50px;
+}
+
+/* Кнопка присоединиться */
+.btn-3 {
+  display: block;
+  margin: 20px auto;
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--accent);
+  border: none;
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.btn-3:hover {
+  background-color: var(--separator);
+}
+
+.divider {
+  border: none;
+  background-color: var(--separator);
+  border-top: 2px solid var(--separator);
+  border-radius: 5px;
+  width: 100%;
+}
+
+.mesto {
+  margin-top: 20px;
+  color: var(--text);
+  line-height: 23px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 800px;
+}
+
+.hero-text {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.hero-img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 900px;
+  height: auto;
+  transform: translate(-50%, -50%);
+  opacity: 0.06;
+  z-index: 0;
+  pointer-events: none;
+}
+
+.hero-img-right {
+  right: -10%;
+}
+
+.hero-img-left {
+  left: -10%;
+}
+
+.hero-img {
+  display: none;
+}
+
+.hero-img[data-light] {
+  display: block;
+}
+
+.dark-theme .hero-img[data-light] {
+  display: none;
+}
+
+.dark-theme .hero-img[data-dark] {
+  display: block;
+}
+
+.block {
+  width: 519px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.chtotakoe {
+  color: var(--accent);
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.soob {
+  color: var(--accent);
+  margin-bottom: 50px;
+}
+
+/* Таблица */
+.tablica {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin-left: 30px;
+  margin-right: 30px;
+  border: 1px solid var(--separator);
+  border-radius: 12px;
+  overflow: hidden;
+  color: var(--head);
+}
+
+.card {
+  padding: 30px;
+  border-right: 1px solid var(--separator);
+  border-bottom: 1px solid var(--separator);
+}
+
+.card p {
+  margin-top: 15px;
+  margin-bottom: 0;
+  line-height: 24px;
+  color: var(--text);
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.card h2,
+.card p {
+  margin-left: 0;
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: var(--main);
+  border: 2px solid var(--border);
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.icon i {
+  color: var(--head);
+  font-size: 24px;
+}
+
+.dark-block {
+  position: relative;
+  background-color: var(--block);
+  padding: 50px 30px;
+  margin-top: 30px;
+  margin-bottom: 50px;
+}
+
+.kakrabotaet {
+  color: var(--accent);
+  margin-bottom: 30px;
+  margin-top: 15px;
+  margin-left: auto;
+}
+
+.stanovis {
+  margin-top: 30px;
+  margin-bottom: 15px;
+}
+
+.trishaga {
+  color: var(--head);
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: auto;
+}
+
+.kruga {
+  color: var(--accent);
+}
+
+.step {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 40px;
+  align-items: flex-start;
+  font-family: "Bebas", sans-serif;
+}
+
+.num {
+  font-size: 64px;
+  font-weight: 600;
+  color: var(--text);
+  width: 60px;
+  margin-top: 25px;
+}
+
+.text h3 {
+  margin: 0;
+  font-weight: 400;
+  font-size: 20px;
+  font-family: "Geologica", sans-serif;
+  margin-top: 25px;
+}
+
+.text p {
+  margin: 6px 0 0;
+  color: var(--text);
+  line-height: 1.5;
+}
+
+.divider2 {
+  border: none;
+  background-color: var(--separator);
+  border-top: 2px solid var(--separator);
+  border-radius: 5px;
+  width: 830px;
+  margin: 10px 0;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+.alexander {
+  position: absolute;
+  right: 30px;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 700px;
+}
+
+.img-box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img-text {
+  position: absolute;
+  inset: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  font-size: clamp(36px, 6vw, 128px);
+  line-height: 1;
+}
+
+.svoy {
+  color: var(--accent);
+}
+
+.btn-4 {
+  display: block;
+  margin: 20px auto;
+  width: 220px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: var(--accent);
+  border: none;
+  color: var(--bg);
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 50px;
+  cursor: pointer;
+}
+
+.btn-4:hover {
+  background-color: var(--separator);
+}
+
+.prisoed {
+  color: var(--text);
+  line-height: 23px;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+/* Футер */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+  padding: 0 40px;
+  box-sizing: border-box;
+  border-top: 1px solid var(--separator);
+  background-color: var(--bg);
+}
+
+/* Лого */
+.logo-wrap2 {
+  display: flex;
+  flex-direction: column;
+  line-height: 1;
+}
+
+.logo3 {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 36px;
+  margin: 0;
+  text-decoration: none;
+  color: var(--head);
+  line-height: 1;
+}
+
+.logo4 {
+  font-family: "Bebas", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  margin: 0;
+  text-decoration: none;
+  color: var(--accent);
+  line-height: 1;
+}
+
+/* Текст */
+.footer-text {
+  margin: 0;
+  font-family: "Geologica", sans-serif;
+  font-size: 14px;
+  color: var(--text);
+}
+
+.footer-text {
+  text-align: center;
+  width: 100%;
+}
+
+/* Тёмная тема */
+[data-dark] {
+  display: none;
+}
+
+.dark-theme [data-light] {
+  display: none;
+}
+
+.dark-theme [data-dark] {
+  display: block;
+}
+
+.sun {
+  display: none;
+}
+
+.moon {
+  display: block;
+}
+
+.dark-theme .sun {
+  display: block;
+}
+
+.dark-theme .moon {
+  display: none;
+}
+
+/* Планшеты */
+@media (max-width: 1024px) {
+  h1,
+  .img-text {
+    font-size: 80px;
+    line-height: 80px;
+    letter-spacing: 4px;
+  }
+
+  .hero {
+    height: 650px;
+  }
+
+  .hero-img {
+    width: 40%;
+  }
+
+  .alexander {
+    width: 450px;
+  }
+
+  .divider2 {
+    width: 100%;
+  }
+
+  .tablica {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Телефоны */
+@media (max-width: 768px) {
+  body {
+    padding-top: 76px;
+  }
+
+  p,
+  h1,
+  h2,
+  .community,
+  .mesto,
+  .block,
+  .prisoed {
+    margin-left: 0;
+  }
+
+  h1 {
+    font-size: 72px;
+    line-height: 52px;
+    letter-spacing: 2px;
+    text-align: center;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  h2 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+    line-height: 22px;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  header {
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  .btn-wrap {
+    gap: 8px;
+  }
+
+  .btn-1 {
+    width: 70px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .btn-2 {
+    width: 110px;
+    height: 34px;
+    font-size: 13px;
+  }
+
+  .theme-btn {
+    width: 34px;
+    height: 34px;
+    padding: 0;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 35px 0 60px;
+  }
+
+  .hero-img {
+    width: 600px;
+    opacity: 0.04;
+  }
+
+  .hero-text h1 {
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .tablica {
+    grid-template-columns: 1fr;
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+  .card {
+    border-right: none;
+  }
+
+  .block {
+    width: auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+
+  .dark-block {
+    padding: 40px 20px;
+  }
+
+  .step {
+    gap: 14px;
+    margin-bottom: 30px;
+  }
+
+  .num {
+    font-size: 42px;
+    width: 40px;
+    margin-top: 12px;
+  }
+
+  .text h3 {
+    font-size: 18px;
+    margin-top: 10px;
+  }
+
+  .divider2 {
+    width: 100%;
+  }
+
+  .alexander {
+    position: static;
+    transform: none;
+    width: 100%;
+    margin-top: 30px;
+  }
+
+  .img-box {
+    position: relative;
+    width: 320px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .img {
+    width: 320px;
+    max-width: 100%;
+  }
+
+  .img-text {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 80px !important;
+    line-height: 75px !important;
+    letter-spacing: 2px !important;
+    transform: translateY(10px);
+  }
+
+  .btn-3 {
+    width: calc(100% - 40px);
+    max-width: 200px;
+  }
+
+  .btn-4 {
+    width: calc(100% - 40px);
+    max-width: 230px;
+  }
+
+  footer {
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer-text {
+    text-align: center;
+    width: 100%;
+  }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+  h1 {
+    font-size: 42px;
+    line-height: 42px;
+  }
+
+  .img-text {
+    font-size: 36px;
+    line-height: 36px;
+  }
+
+  .logo {
+    font-size: 28px;
+  }
+
+  .logo2 {
+    font-size: 16px;
+  }
+
+  .card {
+    padding: 20px;
+  }
+
+  .icon {
+    width: 44px;
+    height: 44px;
+  }
+
+  .icon i {
+    font-size: 20px;
+  }
+}
